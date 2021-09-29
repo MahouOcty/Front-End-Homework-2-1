@@ -14,7 +14,7 @@
 }
 
 .App-content {
-  background-color: #61dafb;
+  background-color: #11001c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #11001c;
 }
 
 @keyframes App-logo-spin {
@@ -54,31 +54,98 @@ form button {
   border-radius: 4px;
   padding: 0.5em 1em;
   color: #ffffff;
-  background-color: darkgreen;
+  background-color: #4EBC55;
   height: 30px;
   width: 120px;
+}
+
+form button:hover {
+  background-color: #3EA344;
+}
+
+[type="checkbox"]{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.cb-complete {
+  position: absolute;
+  margin: 10px;
+  cursor: pointer;
+  left: 15px;
 }
 
 h3 {
   margin: 0;
 }
+.todo-item {
+  position: absolute;
+  left: 70px;
+}
 
 .list {
+  position: relative;
+  height: 60px;
+  width: 500px;
+  background-color: #400165;
   display: flex;
   margin: 5px;
   flex-direction: row;
-  align-items: flex-end;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
 }
 
 .btn-delete {
+  position: absolute;
   cursor: pointer;
   display: inline-block;
   text-align: center;
   text-decoration: none;
   border: solid 1px transparent;
-  border-radius: 4px;
+  margin: 10px;
+  border-radius: 15px;
   color: #ffffff;
-  background-color: red;
+  background-color: #B60256;
   height: 30px;
   width: 30px;
+  right: 15px;
+}
+
+.btn-delete:hover{
+  background-color: #8D0143;
+}
+
+
+.btn-edit {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px transparent;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #FAD223;
+  height: 30px;
+  right: 65px;
+  width: 30px;
+}
+
+.btn-edit:hover{
+  background-color: #DCB404;
+}
+
+.btn-edit svg {
+  color: #ffffff;
+}
+
+.edit {
+  display: none;
+}
+
+.show {
+  display: flex;
 }

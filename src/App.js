@@ -16,7 +16,7 @@ const App = () => {
     <div className='App'>
       <div className='App-content'>
         <p>Aqui haremos nuestro TODO</p>
-        <Form />
+        <Form/>
       </div>
     </div>
   );
